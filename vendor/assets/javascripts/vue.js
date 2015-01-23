@@ -1412,7 +1412,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	/**
-	 * Initialize the data. 
+	 * Initialize the data.
 	 */
 
 	exports._initData = function () {
@@ -1645,7 +1645,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var content = options._content = _.extractContent(raw)
 	      // create two separate linekrs for container and content
 	      var parentOptions = parent.$options
-	      
+
 	      // hack: we need to skip the paramAttributes for this
 	      // child instance when compiling its parent container
 	      // linker. there could be a better way to do this.
@@ -2102,7 +2102,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Insert el before target
 	 *
 	 * @param {Element} el
-	 * @param {Element} target 
+	 * @param {Element} target
 	 */
 
 	exports.before = function (el, target) {
@@ -2113,7 +2113,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Insert el after target
 	 *
 	 * @param {Element} el
-	 * @param {Element} target 
+	 * @param {Element} target
 	 */
 
 	exports.after = function (el, target) {
@@ -2138,7 +2138,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Prepend el to target
 	 *
 	 * @param {Element} el
-	 * @param {Element} target 
+	 * @param {Element} target
 	 */
 
 	exports.prepend = function (el, target) {
@@ -2356,7 +2356,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function enableDebug () {
 	  var hasConsole = typeof console !== 'undefined'
-	  
+
 	  /**
 	   * Log a message.
 	   *
@@ -3019,7 +3019,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  update: function (value) {
 	    this.el[this.attr] = _.toString(value)
 	  }
-	  
+
 	}
 
 /***/ },
@@ -3153,7 +3153,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  unbind: function () {
 	    delete this.vm.$$[this.expression]
 	  }
-	  
+
 	}
 
 /***/ },
@@ -3183,7 +3183,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      delete this.vm.$[this.expression]
 	    }
 	  }
-	  
+
 	}
 
 /***/ },
@@ -4199,7 +4199,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // avoid duplicate inserts, since update() can be
 	    // called with different truthy values
 	    if (!this.unlink) {
-	      this.compile(this.template) 
+	      this.compile(this.template)
 	    }
 	  },
 
@@ -4297,7 +4297,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _ = __webpack_require__(1)
 
-	module.exports = { 
+	module.exports = {
 
 	  bind: function () {
 	    var child = this.el.__vue__
@@ -4463,7 +4463,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 
 	p.notify = function () {
-	  for (var i = 0, l = this.subs.length; i < l; i++) {
+		for (var i = 0; i < this.subs.length; i++) {
 	    this.subs[i].update()
 	  }
 	}
